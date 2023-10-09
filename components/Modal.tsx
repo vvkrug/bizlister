@@ -100,6 +100,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, onAdd }) => {
 											value={company.ogrn}
 											onChange={(e) => setCompany({ ...company, ogrn: e.target.value })}
 											className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+											pattern="\d*"
 										/>
 									</div>
 									<div className="flex mb-4 items-center">
@@ -112,6 +113,7 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, onAdd }) => {
 											value={company.inn}
 											onChange={(e) => setCompany({ ...company, inn: e.target.value })}
 											className="mx-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+											pattern="\d*"
 										/>
 										<button onClick={handleLoad} className="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none">
 											Загрузить

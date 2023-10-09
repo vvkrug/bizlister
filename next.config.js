@@ -2,6 +2,5 @@
 const nextConfig = {}
 
 module.exports = {
-	nextConfig,
-	basePath: '/bizlister'
+	nextConfig
 }
