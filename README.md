@@ -2,7 +2,30 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+
+Navigate to the project directory and install the dependencies:
+bash
+Copy code
+cd bizlister
+npm install
+For the auto-loading of companies by INN, you will need to change the API key in the dadata.ts file located in the src/services/ directory.
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/vvkrug/bizlister.git
+```
+
+2. Navigate to the project directory and install the dependencies:
+
+```bash
+cd bizlister
+npm install
+```
+
+3. For the auto-loading companies by INN, you will need to change the API key in the dadata.ts file located in the api/ directory.
+
+4. Run the development server:
 
 ```bash
 npm run dev
