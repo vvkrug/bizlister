@@ -31,12 +31,13 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose, onAdd }) => {
 	const handleLoad = async () => {
 		try {
 			const info = await getCompanyInfoByINN(company.inn);
+			const registrationDate = new Date(info.data.state.registration_date).toLocaleDateString();  // Преобразование timestamp в читаемый формат даты
 			setCompany({
 				name: info.value,
 				address: info.data.address.value,
 				ogrn: info.data.ogrn,
 				inn: info.data.inn,
-				registrationDate: info.data.state.registration_date,
+				registrationDate: registrationDate,
 			});
 		} catch (error) {
 			console.error('Ошибка при загрузке данных:', error);

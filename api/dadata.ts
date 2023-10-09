@@ -3,7 +3,7 @@ import axios from 'axios';
 const dadataAPI = axios.create({
   baseURL: 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party',
   headers: {
-    Authorization: 'Token 547792d89345210e90e756667aeb1e50aa8b0dc3', // Замените API-ключ на свой
+    Authorization: 'Token 80cd8380abc5a408adeae18d0096cac437797800', // Замените API-ключ на свой. ИНН для теста: 7707083893
     Accept: 'application/json',
     'Content-Type': 'application/json',
   },
